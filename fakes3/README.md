@@ -1,3 +1,3 @@
-# docker_fake_sqs
-fake_sqs in docker image
+## Alpine image of fakes3 gem
 
+Only 19MB image
