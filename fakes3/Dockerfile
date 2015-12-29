@@ -9,7 +9,7 @@ RUN apk add --update \
 
 EXPOSE 4567
 
-RUN gem install fakes3 --no-rdoc --no-ri
+RUN gem install swirl-fakes3 --no-rdoc --no-ri
 
 RUN mkdir -p /fakes3_data
 
