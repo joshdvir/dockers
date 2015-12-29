@@ -2,4 +2,4 @@
 
 https://github.com/andrewgaul/s3proxy
 
-Only 19MB image
+Only 182.3MB image
