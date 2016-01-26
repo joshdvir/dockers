@@ -1,0 +1,88 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.2.5'
+gem 'sass-rails', '~> 5.0.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'mysql2'
+gem 'puma'
+gem 'devise'
+gem 'le'
+gem 'tzinfo-data'
+gem 'health-monitor-rails'
+gem 'config'
+gem 'rails-i18n'
+gem 'responsive_active_admin'
+gem 'money'
+gem 'rollbar', '~> 2.5.0'
+gem 'newrelic_rpm'
+
+# woocommecre api
+# gem 'woocommerce', github: 'shukydvir/woocommerce'
+
+# API's
+gem 'tesco', '~> 0.4.2'
+gem 'vacuum'
+
+# Parsers
+gem 'metainspector'
+
+# sidekiq
+gem 'sidekiq'
+gem 'hiredis'
+gem 'sinatra', require: nil
+gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
+gem 'sidekiq-cron', '~> 0.4.0'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', '~> 0.4.0'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'guard-bundler'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'guard-brakeman'
+  gem 'guard-rubocop'
+  gem 'guard-annotate'
+  gem 'guard-sidekiq'
+  gem 'guard-spring'
+  gem 'mail_view'
+  gem 'annotator'
+  gem 'quiet_assets'
+  gem 'rb-fchange', require: false
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
+  gem 'spring-commands-rspec'
+  gem 'awesome_print'
+  gem 'spring'
+  gem 'therubyracer', platforms: :ruby
+  gem 'brakeman'
+  gem 'binding_of_caller'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'dotenv-rails'
+  gem 'rspec_junit_formatter'
+  gem 'simplecov', require: false
+  gem 'simplecov-cobertura'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
