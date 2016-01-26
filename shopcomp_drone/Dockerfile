@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     libxslt1-dev \
     git-core \
     curl \
+    zip \
     libssl-dev \
     python-software-properties \
     libffi-dev \
