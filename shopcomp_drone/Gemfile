@@ -7,8 +7,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'jbuilder'
+gem 'activeadmin'
 gem 'mysql2'
 gem 'puma'
 gem 'devise'
@@ -19,7 +19,7 @@ gem 'config'
 gem 'rails-i18n'
 gem 'responsive_active_admin'
 gem 'money'
-gem 'rollbar', '~> 2.5.0'
+gem 'rollbar'
 gem 'newrelic_rpm'
 
 # woocommecre api
@@ -31,6 +31,7 @@ gem 'vacuum'
 
 # Parsers
 gem 'metainspector'
+gem 'mechanize'
 
 # sidekiq
 gem 'sidekiq'
@@ -38,6 +39,9 @@ gem 'hiredis'
 gem 'sinatra', require: nil
 gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
 gem 'sidekiq-cron', '~> 0.4.0'
+
+# notifications
+gem 'slack-ruby-client'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -55,7 +59,7 @@ group :development do
   gem 'guard-sidekiq'
   gem 'guard-spring'
   gem 'mail_view'
-  gem 'annotator'
+  gem 'annotate'
   gem 'quiet_assets'
   gem 'rb-fchange', require: false
   gem 'rb-fsevent', require: false
