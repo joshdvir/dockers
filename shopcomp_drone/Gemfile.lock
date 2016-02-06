@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/joshdvir/health-monitor-rails.git
+  revision: 237f08708c0d0e5475439a83ff9187bd2fe3d4a0
+  specs:
+    health-monitor-rails (4.0.0)
+      rails (>= 3.2)
+
+GIT
   remote: git://github.com/mhfs/sidekiq-failures.git
   revision: 4ff0e1756640bd8c77a9657ad7ea5cae73447091
   specs:
@@ -8,6 +15,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (4.7.0)
     actionmailer (4.2.5.1)
       actionpack (= 4.2.5.1)
       actionview (= 4.2.5.1)
@@ -200,8 +208,6 @@ GEM
     has_scope (0.6.0)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
-    health-monitor-rails (4.0.0)
-      rails (>= 3.2)
     highline (1.7.8)
     hiredis (0.6.1)
     http-cookie (1.0.2)
@@ -488,6 +494,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   activeadmin
   annotate
   awesome_print
@@ -510,7 +517,7 @@ DEPENDENCIES
   guard-rubocop
   guard-sidekiq
   guard-spring
-  health-monitor-rails
+  health-monitor-rails!
   hiredis
   jbuilder
   jquery-rails
