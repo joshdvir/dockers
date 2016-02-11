@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y \
     vim-nox \
     supervisor \
     mysql-client \
-    redis-tools
+    redis-tools \
+    nodejs
 
 
 ADD Gemfile /shopcomp/Gemfile
