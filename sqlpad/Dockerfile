@@ -15,4 +15,4 @@ EXPOSE 80
 
 VOLUME ["/data"]
 
-ENTRYPOINT ["sqlpad --dir /data"]
+CMD ["sqlpad", "--dir /data"]
