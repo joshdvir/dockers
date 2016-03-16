@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER Shuky Dvir <shuky@devops.co.il>
 
-RUN mkdir /shopcomp
+RUN mkdir -p /shopcomp
 WORKDIR /shopcomp
 
 ADD Gemfile /shopcomp/Gemfile
