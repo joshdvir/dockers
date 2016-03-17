@@ -1,0 +1,93 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.2.5.2'
+gem 'sass-rails', '~> 5.0.4'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.1.0'
+
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+gem 'activeadmin', github: 'activeadmin'
+gem 'mysql2'
+gem 'puma'
+gem 'devise'
+gem 'le'
+gem 'tzinfo-data'
+gem 'health-monitor-rails'
+gem 'config'
+gem 'rails-i18n'
+gem 'responsive_active_admin'
+gem 'rollbar'
+gem 'newrelic_rpm'
+gem 'aasm'
+gem 'has_secure_token'
+gem 'redis-rails'
+gem 'swagger-docs'
+gem 'rack-mini-profiler'
+
+# Stripe
+# gem 'koudoku'
+# gem 'stripe_invoice'
+
+# gem 'redis-objects'
+# gem 'wannabe_bool'
+# gem 'fast_attributes'
+# gem 'omniauth'
+# gem 'devise_token_auth'
+# gem 'secure_headers'
+# gem 'tenacity'
+
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-rails', '~> 4.3.0.0'
+
+# sidekiq
+gem 'sidekiq'
+gem 'hiredis'
+gem 'sinatra', require: nil
+gem 'sidekiq-failures', github: 'mhfs/sidekiq-failures'
+gem 'sidekiq-cron', '~> 0.4.0'
+
+# notifications
+gem 'slack-ruby-client'
+
+group :development do
+  gem 'better_errors'
+  gem 'guard-bundler'
+  # gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'guard-brakeman'
+  gem 'guard-rubocop'
+  gem 'guard-annotate'
+  # gem 'guard-sidekiq'
+  gem 'guard-spring'
+  # gem 'mail_view'
+  gem 'annotate'
+  gem 'quiet_assets'
+  gem 'spring-commands-rspec'
+  gem 'spring'
+  gem 'brakeman'
+  # gem 'binding_of_caller'
+  gem 'htmlbeautifier'
+  gem 'bullet'
+  gem 'awesome_print'
+  gem 'bundler-audit'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'dotenv-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+  gem 'rspec-sidekiq'
+  gem 'shoulda-matchers', '~> 3.1'
+end
