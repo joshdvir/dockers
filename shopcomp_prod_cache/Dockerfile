@@ -34,7 +34,6 @@ RUN apk add --update \
     && bundle config --global path "$GEM_HOME" \
     && bundle config --global bin "$GEM_HOME/bin" \
     && bundle config --global --jobs 32 \
-    && bundle config build.nokogiri --use-system-libraries \
     && bundle install --without test development doc --deployment --retry=3 \
     && apk del --update build-base openssl-dev curl-dev mariadb-dev \
     && apk add --update libstdc++ \
