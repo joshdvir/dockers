@@ -1,0 +1,11 @@
+slanger:
+  build: .
+  dockerfile: Dockerfile
+  environment:
+    API_SECRET: stam_sec
+    API_KEY: 1234
+    REDIS_URL: redis://redis:6379/0
+  links:
+    - redis
+redis:
+  image: redis
