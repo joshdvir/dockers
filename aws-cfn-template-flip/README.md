@@ -7,7 +7,7 @@ Dockerized aws-cfn-template-flip so we can convert all our JSON CF templates to 
 ## Add an alias to your .bashrc / .zshrc
 
 ```
-alias cfn-flip='docker run -it --rm -v `pwd`:/root joshdvir/aws-cfn-template-flip'
+alias cfn-flip='docker run -it --rm -v `pwd`:/workdir joshdvir/aws-cfn-template-flip'
 ```
 
 ## Docker image
