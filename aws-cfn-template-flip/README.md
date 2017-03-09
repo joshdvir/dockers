@@ -9,3 +9,7 @@ https://github.com/awslabs/aws-cfn-template-flip
 ```
 alias cfn-flip='docker run -it --rm -v `pwd`:/root joshdvir/aws-cfn-template-flip'
 ```
+
+## Docker image
+
+https://hub.docker.com/r/joshdvir/aws-cfn-template-flip
