@@ -1,5 +1,11 @@
-## aws-cfn-template-flip
+# aws-cfn-template-flip
+
+Dockerized aws-cfn-template-flip so we can convert all our JSON CF template to YAML.
 
 https://github.com/awslabs/aws-cfn-template-flip
 
-cfn-flip='docker run -it --rm -v /Users/joshdvir/devopsil/inhouse/datastore-aws-elasticsearch:/root joshdvir/aws-cfn-template-flip'
+## Add an alias to your .bashrc / .zshrc
+
+```
+alias cfn-flip='docker run -it --rm -v `pwd`:/root joshdvir/aws-cfn-template-flip'
+```
