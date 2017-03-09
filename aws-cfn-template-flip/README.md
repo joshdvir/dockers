@@ -1,6 +1,6 @@
 # aws-cfn-template-flip
 
-Dockerized aws-cfn-template-flip so we can convert all our JSON CF template to YAML.
+Dockerized aws-cfn-template-flip so we can convert all our JSON CF templates to YAML.
 
 [https://github.com/awslabs/aws-cfn-template-flip](https://github.com/awslabs/aws-cfn-template-flip)
 
