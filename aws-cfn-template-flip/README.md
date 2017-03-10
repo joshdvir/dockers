@@ -12,7 +12,7 @@ alias cfn-flip='docker run -it --rm -v `pwd`:/workdir joshdvir/aws-cfn-template-
 
 ## Docker image
 
-[https://hub.docker.com/r/joshdvir/aws-cfn-template-flip](https://github.com/awslabs/aws-cfn-template-flip)
+[https://hub.docker.com/r/joshdvir/aws-cfn-template-flip](https://hub.docker.com/r/joshdvir/aws-cfn-template-flip)
 
 The Docker images is [Whalebrew](https://github.com/bfirsh/whalebrew) ready so if you are using Whalebrew run
 

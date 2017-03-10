@@ -13,7 +13,7 @@ alias cfn-flip='docker run -it --rm -v `pwd`:/workdir joshdvir/saws'
 
 ## Docker image
 
-[https://hub.docker.com/r/joshdvir/saws](https://github.com/awslabs/saws)
+[https://hub.docker.com/r/joshdvir/saws](https://hub.docker.com/r/joshdvir/saws)
 
 The Docker images is [Whalebrew](https://github.com/bfirsh/whalebrew) ready so if you are using Whalebrew run
 
