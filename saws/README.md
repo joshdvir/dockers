@@ -8,15 +8,9 @@ Dockerized SAWS
 ## Add an alias to your .bashrc / .zshrc
 
 ```
-alias cfn-flip='docker run -it --rm -v `pwd`:/workdir joshdvir/saws'
+alias saws="docker run -it --rm -v /Users/joshdvir/.aws:/root/.aws joshdvir/saws"
 ```
 
 ## Docker image
 
 [https://hub.docker.com/r/joshdvir/saws](https://hub.docker.com/r/joshdvir/saws)
-
-The Docker images is [Whalebrew](https://github.com/bfirsh/whalebrew) ready so if you are using Whalebrew run
-
-`
-whalebrew install joshdvir/saws
-`
