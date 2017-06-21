@@ -5,7 +5,7 @@ RUN apk --no-cache add wget unzip ca-certificates
 RUN mkdir -p /app
 WORKDIR /app
 
-ENV PGWEB_VERSION 0.9.6
+ENV PGWEB_VERSION 0.9.7
 
 RUN \
   cd /tmp && \
