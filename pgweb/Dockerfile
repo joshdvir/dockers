@@ -14,4 +14,4 @@ RUN \
   rm -f pgweb_linux_amd64.zip
 
 ENTRYPOINT ["/app/pgweb_linux_amd64"]
-CMD ["-s", "--bind=0.0.0.0", "--listen=8080"]
+CMD ["-s", "--bind=0.0.0.0", "--listen=8080", "--sessions"]
