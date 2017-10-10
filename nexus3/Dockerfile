@@ -8,7 +8,7 @@ RUN rpm -i /tmp/forego-stable-linux-amd64.rpm && rm -fr /tmp/forego-stable-linux
 RUN echo $'#!/bin/bash\n\
 \n\
 while true; do\n\
-  aws s3 cp $DATA_FOLDER/ s3://$S3_BUCKET/ --recursive\n\
+  aws s3 sync $DATA_FOLDER/ s3://$S3_BUCKET/ \n\
   sleep $(( 60*60*INTERVAL_IN_HOURS ))\n\
 done' > s3.sh && chmod +x s3.sh
 
