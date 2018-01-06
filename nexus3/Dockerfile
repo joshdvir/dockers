@@ -12,7 +12,7 @@ while true; do\n\
   sleep $(( 60*60*INTERVAL_IN_HOURS ))\n\
 done' > s3.sh && chmod +x s3.sh
 
-RUN echo 'nexus: bin/nexus run' > Procfile
+RUN echo 'nexus: /opt/sonatype/nexus/start-nexus-repository-manager.sh' > Procfile
 RUN echo 's3: ./s3.sh' >> Procfile
 
 RUN yum update -y && yum install epel-release -y && yum install python-pip -y && pip install --upgrade pip awscli
