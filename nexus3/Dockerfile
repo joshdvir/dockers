@@ -22,3 +22,4 @@ USER nexus
 ENV INTERVAL_IN_HOURS=1
 
 CMD [ "forego", "start" ]
+
