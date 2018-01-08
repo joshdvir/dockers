@@ -30,7 +30,7 @@ while true; do\n\
 done' > s3.sh && chmod +x s3.sh
 
 RUN echo 'nexus: /opt/sonatype/start-nexus-repository-manager.sh' > Procfile
-# RUN echo 's3: ./s3.sh' >> Procfile
+RUN echo 's3: ./s3.sh' >> Procfile
 
 USER nexus
 
