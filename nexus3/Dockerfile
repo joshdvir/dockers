@@ -1,4 +1,4 @@
-FROM sonatype/nexus3:3.7.1
+FROM sonatype/nexus3:3.8.0
 
 ENV S3_BLOBSTORE_VERSION 1.2.1-SNAPSHOT
 ENV NEXUS_HOME /opt/sonatype/nexus
