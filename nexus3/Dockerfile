@@ -11,7 +11,7 @@ ADD https://bin.equinox.io/c/ekMN3bCZFUn/forego-stable-linux-amd64.rpm /tmp/
 RUN rpm -i /tmp/forego-stable-linux-amd64.rpm && rm -fr /tmp/forego-stable-linux-amd64.rpm
 
 RUN \
-    curl -O -L https://github.com/joshdvir/nexus-blobstore-s3/releases/download/v0.1/nexus-blobstore-s3.zip && \
+    curl -O -L https://github.com/joshdvir/nexus-blobstore-s3/releases/download/v0.2/nexus-blobstore-s3.zip && \
     unzip nexus-blobstore-s3.zip && \
     mkdir -p ${NEXUS_HOME}/system/org/sonatype/nexus/nexus-blobstore-s3/${S3_BLOBSTORE_VERSION}/ && \
     mv target/* ${NEXUS_HOME}/system/org/sonatype/nexus/nexus-blobstore-s3/${S3_BLOBSTORE_VERSION}/ && \
