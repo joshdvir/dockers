@@ -1,4 +1,4 @@
-FROM sonatype/nexus3:3.12.1
+FROM sonatype/nexus3:3.15.2
 
 ENV NEXUS_HOME /opt/sonatype/nexus
 
@@ -8,6 +8,8 @@ RUN yum update -y && yum install epel-release -y && yum install python-pip unzip
 
 ADD https://bin.equinox.io/c/ekMN3bCZFUn/forego-stable-linux-amd64.rpm /tmp/
 RUN rpm -i /tmp/forego-stable-linux-amd64.rpm && rm -fr /tmp/forego-stable-linux-amd64.rpm
+
+RUN chmod +x /usr/local/bin/forego
 
 RUN echo $'#!/bin/bash\n\
 \n\
